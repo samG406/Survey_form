@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href = "style.css">
+    <link href = "https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap" rel = "stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title" class="test-center"> Survey form</h1>
+    
+    <form id="survey-form">
+      <div class= "form-group" id="input-fields">
+        <label id="name-label" for="name">Name </label>
+        <input 
+        id="name" 
+        name="name" 
+        type="text"
+        class="form-control"  
+        placeholder="  Enter your name"
+        required/>
+    </div>
+    <div class="form-group">
+        <label id="email-label" for="email">Email </label>
+        <input 
+        id="email" 
+        name="email" 
+        type="email"
+        class="form-control"  
+        placeholder="  Enter your email"
+        required/>
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"> Age <span class="clue">(optional)</span></label> 
+        <input 
+        id="number" 
+        name="number" 
+        type="number" 
+        min="10" max="99" 
+        class="form-control" 
+        placeholder="  Age"
+        required/>
+      </div>
+        <div class="form-group" id="dropdown-div">
+          <p>Which much anticipation do you have to know about Srinivasa Ramanujan?</p>
+          <select id="dropdown" name="code-lang" class="form-control" required>
+            <option disabled selected value>Select level of anticipation</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            
+            </select>
+        </div>
+
+        <div class="form-group">
+          <p> would you agree to advertise about his history? </p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label>
+
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label>
+
+          <label>
+            <input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label>
+        </div>
+
+
+        <div class="form-group">
+          <p>What do you like the most in history?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="schemes">Schemes</option>
+            <option value="courage">Courage</option>
+            
+          </select>
+        </div>
+        <div class="form-group">
+          <p>What would you like to get improved by knowing him? <span class="clue">(check all that apply)</span></p>
+          <label>
+            <input name="prefer"
+            type="checkbox"
+            value="Consistency"
+            class="input-checkbox">
+            Consistencyc</label>
+
+          <label>
+            <input name="prefer"
+            type="checkbox"
+            value="persevarence"
+            class="input-checkbox">
+            Persevarence</label>
+
+          <label>
+            <input name="prefer"
+            type="checkbox"
+            value="compassion"
+            class="input-checkbox">
+            Compassion</label>
+
+          <label>
+            <input name="prefer"
+            type="checkbox"
+            value="Bravery"
+            class="input-checkbox">
+            Bravery</label>
+          
+      <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+</body>
+</html>
