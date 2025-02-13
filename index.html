@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href = "style.css">
+    <link rel="stylesheet" href = "color.css">
     <link href = "https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap" rel = "stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
 </head>
+
 <body>
-    <h1 id="title" class="test-center"> Survey form</h1>
-    
+    <div class="container">
+    <header class="header">
+    <h1 id="title" class="text-center"> Survey form</h1>
+    <p id="description" class="description text-center"> Thank you for taking time to fill this form</p>
+    </header>
     <form id="survey-form">
       <div class= "form-group" id="input-fields">
         <label id="name-label" for="name">Name </label>
@@ -19,7 +23,7 @@
         name="name" 
         type="text"
         class="form-control"  
-        placeholder="  Enter your name"
+        placeholder=" Enter your name"
         required/>
     </div>
     <div class="form-group">
@@ -29,7 +33,7 @@
         name="email" 
         type="email"
         class="form-control"  
-        placeholder="  Enter your email"
+        placeholder="Enter your email"
         required/>
     </div>
     <div class="form-group">
@@ -40,11 +44,11 @@
         type="number" 
         min="10" max="99" 
         class="form-control" 
-        placeholder="  Age"
+        placeholder="Age"
         required/>
       </div>
         <div class="form-group" id="dropdown-div">
-          <p>Which much anticipation do you have to know about Srinivasa Ramanujan?</p>
+          <p>Level of anticipation to know about Srinivasa Ramanujan?</p>
           <select id="dropdown" name="code-lang" class="form-control" required>
             <option disabled selected value>Select level of anticipation</option>
             <option value="0">0</option>
@@ -52,7 +56,6 @@
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="Prefer not to say">Prefer not to say</option>
-            
             </select>
         </div>
 
@@ -61,27 +64,27 @@
           <label>
             <input
               name="user-recommend"
-              value="definitely"
+              value="Highly"
               type="radio"
               class="input-radio"
               checked
-            />Definitely</label>
+            />Highly</label>
 
           <label>
             <input
               name="user-recommend"
-              value="maybe"
+              value="moderate"
               type="radio"
               class="input-radio"
-            />Maybe</label>
+            />Moderate</label>
 
           <label>
             <input
               name="user-recommend"
-              value="not-sure"
+              value="not-really"
               type="radio"
               class="input-radio"
-            />Not sure</label>
+            />Not really</label>
         </div>
 
 
@@ -92,24 +95,24 @@
             <option value="challenges">Challenges</option>
             <option value="schemes">Schemes</option>
             <option value="courage">Courage</option>
-            
           </select>
         </div>
         <div class="form-group">
           <p>What would you like to get improved by knowing him? <span class="clue">(check all that apply)</span></p>
           <label>
-            <input name="prefer"
+            <input 
+            name="prefer"
             type="checkbox"
             value="Consistency"
             class="input-checkbox">
-            Consistencyc</label>
+            Consistency</label>
 
           <label>
             <input name="prefer"
             type="checkbox"
             value="persevarence"
             class="input-checkbox">
-            Persevarence</label>
+            Perseverance</label>
 
           <label>
             <input name="prefer"
@@ -123,7 +126,7 @@
             type="checkbox"
             value="Bravery"
             class="input-checkbox">
-            Bravery</label>
+            Courage</label>
           
       <div class="form-group">
           <p>Any comments or suggestions?</p>
@@ -141,5 +144,6 @@
           </button>
         </div>
       </form>
+    </div>
 </body>
 </html>
